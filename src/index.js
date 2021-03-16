@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {AddressContext} from './context/addressContext'
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AddressContext>
+      <App />
+    </AddressContext>
   </React.StrictMode>,
   document.getElementById('root')
 );
