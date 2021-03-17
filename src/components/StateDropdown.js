@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import {useAddressDetails} from '../hooks'
-const StateDropdown = () => {
-    const {state , setState} = useAddressDetails()
+const StateDropdown = ({state , setState}) => {
     return (
         <StyledSelect name="state" id="state" className="form-control" value = {state} onChange = {(e) => setState(e.target.value)}>
         <option value="Select State">Select State</option>
